@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "iscalecc-prometheus-exporter.fullname" . }}
+  labels:
+    {{- include "iscalecc-prometheus-exporter.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: iscalecc-prometheus-exporter
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: iscalecc-prometheus-exporter
+      helm.sh/chart: iscalecc-prometheus-exporter-0.1.0   
+  endpoints:
+  - port: metrics

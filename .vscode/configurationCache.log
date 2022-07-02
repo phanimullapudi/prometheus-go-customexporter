@@ -1,0 +1,1 @@
+{"buildTargets":["deploy","docker-build","docker-push"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

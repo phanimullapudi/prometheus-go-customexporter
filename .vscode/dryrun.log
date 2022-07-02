@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/phanimullapudi/Documents/GIT/prometheus-go-customexporter'
+docker build -t phanikmullapudi/iscalecc-prometheus-exporter .
+make: Leaving directory `/Users/phanimullapudi/Documents/GIT/prometheus-go-customexporter'
+ 
