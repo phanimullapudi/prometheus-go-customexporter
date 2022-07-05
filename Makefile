@@ -5,4 +5,4 @@ docker-push:
 	docker push phanikmullapudi/iscalecc-prometheus-exporter
 
 deploy:
-	helm upgrade --install iscalecc-prometheus-exporter ./chart --namespace=default
+	helm upgrade --install iscalecc-prometheus-exporter ./chart --namespace=monitoring
